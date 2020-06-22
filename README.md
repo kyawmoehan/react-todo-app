@@ -1,8 +1,10 @@
 # Todo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple todo App to bulid and apply the basic of React. The app includes delete todos and add todo.
 
-It is a simple todo App. The app includes delete, add todo .
+![React Todo App](./assets/react_todo_app.png)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

@@ -5,14 +5,14 @@ const TodosComp = ({ todos, deletTodo }) => {
   const TodoLists = todos.length ? (
     todos.map((todo) => {
       return (
-        <div className="collection-item" key={todo.id}>
-          <span
-            onClick={() => {
-              deletTodo(todo.id);
-            }}
-          >
-            {todo.content}
-          </span>
+        <div
+          className="collection-item"
+          key={todo.id}
+          onClick={() => {
+            deletTodo(todo.id);
+          }}
+        >
+          <span>{todo.content}</span>
         </div>
       );
     })
@@ -24,6 +24,7 @@ const TodosComp = ({ todos, deletTodo }) => {
 
 TodosComp.propTypes = {
   todos: propTypes.array.isRequired,
+  deletTodo: propTypes.func.isRequired,
 };
 
 export default TodosComp;
